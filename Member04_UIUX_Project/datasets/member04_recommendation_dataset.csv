@@ -1,0 +1,9 @@
+rule_id,issue_category,issue_description,recommended_solution,explanation,guideline_reference,validation_status
+R001,low_text_contrast,Low Text Contrast,Increase contrast between foreground text and background. Check applicable WCAG contrast requirements.,Low contrast can make text difficult to read.,WCAG 2.2 - 1.4.3 Contrast (Minimum),needs_expert_review
+R002,small_touch_targets,Small Touch Targets,Increase target dimensions or spacing and verify applicable WCAG target-size requirements.,Small interactive targets can be difficult to activate.,WCAG 2.2 - 2.5.8 Target Size (Minimum),needs_expert_review
+R003,missing_form_labels,Missing Form Labels,"Provide visible, programmatically associated labels for inputs.",Labels clarify what users should enter.,WCAG 2.2 - 3.3.2 Labels or Instructions,needs_expert_review
+R004,missing_alt_text,Missing Alt Text,Provide meaningful text alternatives for informative images; mark decorative images appropriately.,Text alternatives help users understand non-text content.,WCAG 2.2 - 1.1.1 Non-text Content,needs_expert_review
+R005,keyboard_navigation,Keyboard Navigation,Ensure interactive controls are operable by keyboard and focus is visible.,Keyboard support helps users who cannot use a pointer.,WCAG 2.2 - 2.1.1 Keyboard; 2.4.7 Focus Visible,needs_expert_review
+R006,unclear_error_message,Unclear Error Message,Identify errors in text and provide actionable correction guidance.,Specific error feedback helps users recover.,WCAG 2.2 - 3.3.1 Error Identification,needs_expert_review
+R007,inconsistent_navigation,Inconsistent Navigation,Use consistent navigation order and labels across repeated pages.,Consistency reduces confusion while navigating.,WCAG 2.2 - 3.2.3 Consistent Navigation,needs_expert_review
+R008,missing_page_title,Missing Page Title,"Add a descriptive, unique page title.",A clear title helps users understand the page context.,WCAG 2.2 - 2.4.2 Page Titled,needs_expert_review
