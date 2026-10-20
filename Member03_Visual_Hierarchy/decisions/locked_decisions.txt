@@ -1,0 +1,18 @@
+Project: J26-IT-438 Visual Hierarchy & Attention Predictor
+Locked before looking at any test result. Do not change these after evaluation.
+
+1. Baseline (Model 1): TranSalNet_Res, SALICON weights, no training.
+   Optional later baseline: OpenCV spectral residual. Not part of Step 1.
+2. Main model (Model 2): the same TranSalNet_Res, fine-tuned later on the UEyes webpage subset only.
+3. Variant: TranSalNet_Res (ResNet-50). Do not switch to TranSalNet_Dense.
+4. Input: pad to 384 wide by 288 tall. Do not stretch the image.
+5. Pixel scaling: divide by 255 only. Do not use ImageNet mean/std.
+6. Output: the model already applies sigmoid. Values are 0 to 1. Do not sigmoid again.
+7. Ground truth saliency: UEyes heatmaps_3s.
+   Ground truth fixations: UEyes fixmaps_3s.
+   Ignore the train/test flag inside UEyes info.csv. Our own split comes later.
+8. Split, used later: by page, seed 42, 70% train / 15% validation / 15% test.
+   Test pages are never used for tuning.
+9. Element score, used later: mean saliency inside the box.
+10. API input, used later: screenshot, plus URL when one exists.
+    Playwright is the element source. A detector is only the fallback.
