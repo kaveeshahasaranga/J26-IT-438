@@ -1,0 +1,29 @@
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Model weight files (> 100MB exceeded GitHub limit)
+*.pt
+*.pth
+*.bin
+*.onnx
+models/checkpoints/*.pt
+models/transalnet_pretrained/*.pth
+pretrained_models/*.pth
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large archives
+*.zip
+*.tar.gz
